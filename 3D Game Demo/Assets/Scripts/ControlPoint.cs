@@ -9,7 +9,6 @@ public class ControlPoint : MonoBehaviour
     public Rigidbody ball;
 
     public float rotationSpeed = 5f;
-    public float shootPower = 20f;
     public LineRenderer line;
 
     // Update is called once per frame
