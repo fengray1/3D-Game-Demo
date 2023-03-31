@@ -8,6 +8,7 @@ public class LineForce : MonoBehaviour
     [SerializeField] private float stopVelocity = .05f;
     [SerializeField] private float shotPower;
 
+    public float threshold;
     private bool isIdle;
     private bool isAiming;
     private Rigidbody rigidbody;
@@ -19,6 +20,14 @@ public class LineForce : MonoBehaviour
     }
 
     private void Update() {
+        if(transform.position.y < threshold) {
+            isAiming = false;
+            lineRenderer.enabled = false;
+            rigidbody.velocity = Vector3.zero;
+            rigidbody.angularVelocity = Vector3.zero;
+            transform.position = new Vector3(0f, 0.58f, 0f);
+        }
+
         if (rigidbody.velocity.magnitude < stopVelocity) {
             Stop();
         }

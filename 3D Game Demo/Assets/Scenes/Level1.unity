@@ -1643,8 +1643,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1722644844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 44.61, y: 0.87, z: -16}
-  m_LocalScale: {x: 1, y: 10.533058, z: 1}
+  m_LocalPosition: {x: 44.61, y: 6.3, z: -16}
+  m_LocalScale: {x: 0.3, y: 6.440902, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 191499768}
@@ -2030,6 +2030,7 @@ GameObject:
   - component: {fileID: 2061594525}
   - component: {fileID: 2061594524}
   - component: {fileID: 2061594523}
+  - component: {fileID: 2061594529}
   - component: {fileID: 2061594528}
   m_Layer: 0
   m_Name: Player
@@ -2148,3 +2149,16 @@ MonoBehaviour:
   lineRenderer: {fileID: 1280900444}
   stopVelocity: 0.05
   shotPower: 150
+--- !u!114 &2061594529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061594522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc15ff14290cf44579dbb831e32db930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: -10
