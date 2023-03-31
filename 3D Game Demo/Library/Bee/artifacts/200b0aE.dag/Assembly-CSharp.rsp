@@ -349,6 +349,7 @@
 "Assets/Scripts/FollowCamera.cs"
 "Assets/Scripts/LineForce.cs"
 "Assets/Scripts/Respawn.cs"
+"Assets/Scripts/SceneSwitcher.cs"
 -langversion:9.0
 
 /deterministic
